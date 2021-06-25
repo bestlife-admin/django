@@ -18,11 +18,9 @@
 </head>
 
 <body>
-    <h1>Our lead list</h1>
-    {% for lead in leads %}
-        <div class="lead">
-            {{ lead }}
-        </div>
-    {% endfor %}
+    <a href="/leads">Go back to leads</a>
+    <hr />
+    <h1>This is the detail page for {{ lead.first_name}} {{ lead.last_name }}</h1>
+    <p>This person is {{ lead.age }} years old</p>
 </body>
 </html>
