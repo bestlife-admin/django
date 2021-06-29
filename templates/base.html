@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% load tailwind_tags %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bestlife</title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    {% tailwind_css %}
+</head>
+<body>
+    <div class="max-w-4xl mx-auto bg-white-100">
+        {% include 'navbar.html' %}
+        {% block content %}
+        {% endblock content %}
+    </div>
+    {% include "scripts.html" %}
+</body>
+</html>
