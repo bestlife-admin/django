@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'theme',
     'agents',
     'crispy_forms',
-    'crispy_tailwind',
+    "crispy_tailwind",
 ]
 
 MIDDLEWARE = [
