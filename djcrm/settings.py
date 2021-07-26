@@ -67,9 +67,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'djcrm.wsgi.application'
 
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
+# INTERNAL_IPS = [
+#     "127.0.0.1",
+# ]
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
