@@ -20,15 +20,15 @@ module.exports = {
          */
 
         /*  Templates within theme app (<tailwind_app_name>/templates), e.g. base.html. */
-        '../templates/**/*.html',
+        // '../templates/**/*.html',
 
         /* 
          * Main templates directory of the project (BASE_DIR/templates).
          * Adjust the following line to match your project structure.
          */
-        '../../templates/**/*.html',
-        '../../agents/templates/**/*.html',
-        '../../leads/templates/**/*.html',
+        '../templates/**/*.html',
+        '../agents/templates/**/*.html',
+        '../leads/templates/**/*.html',
         
         /* 
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).
@@ -41,15 +41,15 @@ module.exports = {
          * patterns match your project structure.
          */
         /* JS 1: Ignore any JavaScript in node_modules folder. */
-        // '!../../**/node_modules',
+        '!../../**/node_modules',
         /* JS 2: Process all JavaScript files in the project. */
-        // '../../**/*.js',
+        '../../**/*.js',
 
         /**
          * Python: If you use Tailwind CSS classes in Python, uncomment the following line
          * and make sure the pattern below matches your project structure.
          */
-        // '../../**/*.py'
+        '../../**/*.py'
     ],
     darkMode: false, // or 'media' or 'class'
     theme: {
