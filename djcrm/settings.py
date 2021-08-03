@@ -67,9 +67,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'djcrm.wsgi.application'
 
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
+# INTERNAL_IPS = [
+#     "127.0.0.1",
+# ]
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -135,7 +135,7 @@ LOGIN_REDIRECT_URL = "/leads"
 LOGIN_URL = "/login"
 LOGOUT_REDIRECT_URL = "/"
 
-TAILWIND_APP_NAME = 'theme'
+
 CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
 CRISPY_TEMPLATE_PACK = 'tailwind'
 
@@ -163,6 +163,7 @@ if not DEBUG:
     DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")
 
 
+TAILWIND_APP_NAME = 'theme'
 
 
 
